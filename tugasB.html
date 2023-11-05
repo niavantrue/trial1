@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volume Kubus</title>
+    <script lang="javascript" type="text/javascript">
+        function cariVolume(sisi) {
+            return sisi ** 3;
+        }
+    </script>
+</head>
+<body>
+    <h1>Volume Kubus</h1>
+    <p>
+        <form>
+            Masukkan sisi kubus.
+            <br />
+            <input type="text" name="sisi" size="6" maxlength="7" value="-99",
+            onblur="volume.value=cariVolume(parseFloat(sisi.value));">
+            Volume (cm<sup>3</sup>):
+            <input type="text" name="volume" size="6" maxlength="7" value="-99">
+        </form>
+    </p>
+</body>
+</html>

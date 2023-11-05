@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keliling dan Luas lingkaran</title>
+    <script>
+        function hitungLingkaran() {
+            var radius = parseFloat(document.getElementById("radius").value);
+            var luas = Math.PI * radius * radius;
+            var keliling = 2 * Math.PI * radius;
+            document.getElementById("luas").value = luas.toFixed(2);
+            document.getElementById("keliling").value = keliling.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Keliling dan Luas lingkaran</h1>
+    <form>
+        Masukkan jari - jari:
+        <input type="text" id="radius" size="6" maxlength="7" value="-99" onblur="hitungLingkaran()">
+        <br>
+        Luas (cm<sup>2</sup>):
+        <input type="text" id="luas" size="6" maxlength="7" value="-99">
+        <br>
+        Keliling (cm):
+        <input type="text" id="keliling" size="6" maxlength="7" value="-99">
+    </form>
+</body>
+</html>
